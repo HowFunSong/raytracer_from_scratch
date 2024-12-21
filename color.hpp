@@ -1,7 +1,7 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-// #include <iostream>
+#include "interval.hpp"
 #include "vec3.hpp"
 
 using color = vec3;

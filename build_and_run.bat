@@ -1,9 +1,20 @@
 @echo off
+rem ===========================================
+rem           Build and Run Script
+rem ===========================================
+
+rem Step 1: clean old build
+echo Cleaning old build files...
+if exist build (
+    rmdir /s /q build
+)
+
+@echo off
 rem Create the build directory if it does not exist
 if not exist build mkdir build
 
 rem Compile the program
-g++ -g -Llib -o build\main.exe main.cpp -lSDL2 -static-libgcc -static-libstdc++
+g++ -H -g -Llib -o build\main.exe main.cpp -lSDL2 -static-libgcc -static-libstdc++
 
 rem Check if the compilation was successful
 if %errorlevel% neq 0 (
