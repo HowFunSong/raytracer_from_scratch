@@ -406,7 +406,7 @@ int main( int argc, char *argv[] ){
         case 6:  simple_light();       break;
         case 7:  cornell_box();        break;
         case 8:  cornell_smoke();      break;
-        case 9:  final_scene(800, 10000, 40); break;
+        case 9:  final_scene(800,  2000, 20); break; //  default : 800 / 10000 / 40  
         default: final_scene(400,   250,  4); break;
     }
 
